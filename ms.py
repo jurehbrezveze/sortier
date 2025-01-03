@@ -1,8 +1,6 @@
 from mindstorms import Hub
 from mindstorms import Motor
 import time
-
-
 def kuza(hub):
     tone = 1000
     for j in range(2):
@@ -25,15 +23,15 @@ def kuza(hub):
 class sorter:
     def __init__(self):
         self.hub = Hub()
-        self.belt = self.hub.port.A.motor 
-        self.vibr = self.hub.port.B.motor 
+        self.belt1 = self.hub.port.E.motor 
+        self.belt2 = self.hub.port.F.motor 
         time.sleep(0.7)   #required for hub to start working
     def start(self, speed):        
-#        self.belt.run_at_speed(speed*2)
-        self.vibr.run_at_speed(speed)
+        self.belt2.run_at_speed(-speed*0.7)
+        self.belt1.run_at_speed(-speed*1.5)
     def stop(self):        
-        self.belt.brake()
-        self.vibr.brake()
+        self.belt1.brake()
+        self.belt2.brake()
         
 #s = sorter()
 #s.start(50)
