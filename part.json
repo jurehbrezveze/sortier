@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "description": "OK",
+        "message": "OK",
+        "code": 200
+    },
+    "data": {
+        "no": "98283",
+        "name": "Brick, Modified 1 x 2 with Masonry Profile",
+        "type": "PART",
+        "category_id": 7,
+        "image_url": "//img.bricklink.com/PL/98283.jpg",
+        "thumbnail_url": "//img.bricklink.com/P/48/98283.jpg",
+        "weight": "0.77",
+        "dim_x": "1.00",
+        "dim_y": "2.00",
+        "dim_z": "1.00",
+        "year_released": 2012,
+        "is_obsolete": false
+    }
+}
